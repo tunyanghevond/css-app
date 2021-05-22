@@ -1,0 +1,22 @@
+.footer-container {
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 30px 8px 70px 8px;
+  font-size: 25px;
+  h4 {
+    font-weight: 500;
+    margin: 15px 0;
+  }
+  a {
+    @include icon-back($icon-color, $back-ground);
+  }
+  a:nth-child(odd) {
+    margin: 0 10px;
+  }
+  p {
+    margin: 10px 0;
+    font-weight: 500;
+  }
+}

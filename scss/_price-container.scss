@@ -1,0 +1,48 @@
+.price-container {
+  padding: 50px 10px;
+  div {
+    text-align: center;
+    font-weight: 500;
+    margin: 18px 0;
+    h2 {
+      margin: 16px 0;
+    }
+    p {
+      margin: 10px 0;
+    }
+  }
+  aside {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 30px;
+    ul {
+      list-style-type: none;
+      text-align: center;
+      border: 1px solid #ccc;
+      font-size: 20px;
+    }
+
+    li:nth-child(1) {
+      padding: 30px 16px;
+      border-bottom: 1px solid #ddd;
+      background-color: #000000;
+      color: white;
+    }
+    .pro {
+      background-color: #b2aeae !important;
+    }
+    li {
+      padding: 16px;
+      border-bottom: 1px solid #ddd;
+    }
+    button {
+      @include buttens($back-ground, $icon-color);
+    }
+    li:nth-child(7) {
+      padding: 30px 16px;
+      border-bottom: 1px solid #ddd;
+      background-color: #f0f0f0;
+    }
+  }
+}

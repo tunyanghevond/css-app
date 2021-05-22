@@ -1,0 +1,13 @@
+.display-container {
+  background: url("/img/sailboat.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  button {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    @include buttens($back-ground, $text-color);
+  }
+}

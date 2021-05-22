@@ -1,0 +1,20 @@
+@mixin icon-back($back, $color) {
+  display: inline-block;
+  width: 52px;
+  font-size: 31px;
+  text-decoration: none;
+  background: $back;
+  color: $color;
+}
+@mixin icon-color($color) {
+  color: $color;
+  font-size: 25px;
+  margin-right: 8px;
+}
+@mixin buttens($color, $back-color) {
+  color: $color;
+  background-color: $back-color;
+  padding: 8px 16px;
+  font-size: 20px;
+  border: none;
+}

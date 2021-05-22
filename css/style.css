@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.container {
+  background-color: #ffffff;
+  color: black;
+  font-size: 16px;
+  line-height: 1.5; }
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  font-size: 25px;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 999; }
+  .main-nav .logo {
+    background-color: #009688;
+    padding: 11px 18px; }
+    .main-nav .logo i {
+      margin-right: 10px; }
+  .main-nav ul {
+    display: flex; }
+  .main-nav .main-menu {
+    flex: 1;
+    margin-left: 20px; }
+  .main-nav li {
+    padding: 0 20px;
+    list-style: none; }
+  .main-nav a {
+    text-decoration: none;
+    color: #ffffff; }
+
+.menu-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: white;
+  display: none;
+  z-index: 2; }
+
+.menu-btn:hover {
+  cursor: pointer; }
+
+.display-container {
+  background: url("/img/sailboat.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 100vh;
+  position: relative; }
+  .display-container button {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    color: #ffffff;
+    background-color: black;
+    padding: 8px 16px;
+    font-size: 20px;
+    border: none; }
+
+.team-members .title {
+  text-align: center;
+  padding: 20px;
+  font-size: 20px; }
+  .team-members .title h2 {
+    margin: 15px 0; }
+  .team-members .title p {
+    margin: 10px 0; }
+
+.team-members aside {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 250px;
+  grid-gap: 10px; }
+  .team-members aside div {
+    text-align: center; }
+    .team-members aside div img {
+      width: 40%;
+      border-radius: 50%; }
+    .team-members aside div h3 {
+      font-weight: 800;
+      font-size: 20px;
+      margin: 10px 0; }
+    .team-members aside div p {
+      margin: 10px 0; }
+
+.container-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto 250px;
+  grid-gap: 24px;
+  background-color: black;
+  color: #ffffff;
+  padding: 35px 25px;
+  font-size: 20px; }
+  .container-content .work-info {
+    padding: 10px 0; }
+  .container-content .customer-info {
+    background: #ffffff;
+    color: black; }
+    .container-content .customer-info img {
+      width: 100%; }
+    .container-content .customer-info h3 {
+      padding: 8px; }
+    .container-content .customer-info h4,
+    .container-content .customer-info p {
+      padding: 4px 8px; }
+
+.price-container {
+  padding: 50px 10px; }
+  .price-container div {
+    text-align: center;
+    font-weight: 500;
+    margin: 18px 0; }
+    .price-container div h2 {
+      margin: 16px 0; }
+    .price-container div p {
+      margin: 10px 0; }
+  .price-container aside {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 30px; }
+    .price-container aside ul {
+      list-style-type: none;
+      text-align: center;
+      border: 1px solid #ccc;
+      font-size: 20px; }
+    .price-container aside li:nth-child(1) {
+      padding: 30px 16px;
+      border-bottom: 1px solid #ddd;
+      background-color: #000000;
+      color: white; }
+    .price-container aside .pro {
+      background-color: #b2aeae !important; }
+    .price-container aside li {
+      padding: 16px;
+      border-bottom: 1px solid #ddd; }
+    .price-container aside button {
+      color: #ffffff;
+      background-color: #009688;
+      padding: 8px 16px;
+      font-size: 20px;
+      border: none; }
+    .price-container aside li:nth-child(7) {
+      padding: 30px 16px;
+      border-bottom: 1px solid #ddd;
+      background-color: #f0f0f0; }
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  grid-gap: 20px;
+  padding: 50px 20px;
+  background-color: #f0f0f0; }
+  .contact-container .left-side h2 {
+    padding: 15px 0; }
+    .contact-container .left-side h2 span {
+      border-bottom: 5px solid #009688; }
+  .contact-container .left-side h3 {
+    margin: 10px 0; }
+  .contact-container .left-side i {
+    color: #009688;
+    font-size: 25px;
+    margin-right: 8px; }
+  .contact-container .left-side p {
+    margin: 10px 0; }
+  .contact-container .right-side {
+    background: white;
+    box-shadow: 1px 6px 7px 8px #a5a4a4; }
+    .contact-container .right-side form {
+      padding: 8px 16px; }
+      .contact-container .right-side form div {
+        margin: 15px 0; }
+      .contact-container .right-side form input {
+        display: inline-block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        padding: 10px; }
+      .contact-container .right-side form .chckbox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .contact-container .right-side form .chckbox input {
+          width: 30px;
+          height: 26px;
+          position: relative;
+          top: 6px; }
+        .contact-container .right-side form .chckbox button {
+          color: #ffffff;
+          background-color: black;
+          padding: 8px 16px;
+          font-size: 20px;
+          border: none; }
+
+.container-map {
+  background: url("/img/map.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 100vh; }
+
+.footer-container {
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 30px 8px 70px 8px;
+  font-size: 25px; }
+  .footer-container h4 {
+    font-weight: 500;
+    margin: 15px 0; }
+  .footer-container a {
+    display: inline-block;
+    width: 52px;
+    font-size: 31px;
+    text-decoration: none;
+    background: #009688;
+    color: #ffffff; }
+  .footer-container a:nth-child(odd) {
+    margin: 0 10px; }
+  .footer-container p {
+    margin: 10px 0;
+    font-weight: 500; }
+
+@media (max-width: 800px) {
+  .menu-btn {
+    display: block; }
+  .main-nav .right-menu {
+    display: none; }
+  .main-nav ul.main-menu {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 40vh;
+    padding: 20px;
+    z-index: 2;
+    transform: translateX(-900px); }
+  .main-nav ul.main-menu li {
+    padding: 10px;
+    border-bottom: #ccc solid 1px; }
+  .main-nav ul.main-menu li:hover {
+    color: black;
+    background-color: gray; }
+  .main-nav ul.main-menu a {
+    color: white; }
+  .main-nav ul.main-menu.show {
+    transform: translateX(-21px);
+    transition: transform 0.2s ease-in-out; }
+  .team-members aside {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 10px; }
+  .container-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto; }
+  .price-container aside {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); }
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr; } }
